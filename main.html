@@ -14,7 +14,7 @@
 <input type="text"  name="Score" id="Score" value="" />
 <br>
 
-    <label for="class">班级:</label>
+<label for="class">班级:</label>
     <input type="text"  name="class" id="class"  />
     <label for="studentID">学号:</label>
     <input type="text"  name="studentID" id="studentID"  />
@@ -29,6 +29,7 @@
         <input type="text" name="2.1" id="2.13"  />。
     </h3>
 </h2>
+
 <h2>二、选择题（每题10分，共20分）
     <h3>
         1.UML 与软件工程的关系是:<br>
@@ -45,6 +46,7 @@
         <br>
     </h3>
 </h2>
+
 <h2>三、多选题（每题10分，全选对10分，错选不得分，选项不完整得五分，共20分）
     <h3>
         1. 用例的粒度分为以下哪三种。<br>
@@ -61,6 +63,7 @@
         <br>
     </h3>
 </h2>
+
 <h2>四、判断题（每题10分共20分）
     <h3>
         1. 用例图只是用于和客户交流和沟通的,用于确定需求。
@@ -69,17 +72,20 @@
         <input type="radio"   name="4.2" id="421"/>Y<input type="radio"   name="4.2" id="422"/>N<br>
     </h3>
 </h2>
+
 <h2>五、简 答 题 ( 共 20 分 )
     <br>
         1. 简述什么是模型以及模型的表现形式?<br>
          <textarea type="text" rows="5" cols="60"  name="1.1" id="5.1"  /></textarea>
     </h3>
 </h2>
+
 <script>
     function test()
     {
         var studentID=document.getElementById("studentID").value;
         var name=document.getElementById("name").value;
+
         if(studentID==="")
             {
                 alert('请填写学号');
@@ -126,7 +132,6 @@
             var score313 = document.getElementById("3.1c");
             var score314 = document.getElementById("3.1d");
 
-            {
             if (score313.checked === true || score311.checked === false && score312.checked === false && score314.checked === false) {
                 out += 0;
             }
@@ -136,14 +141,12 @@
             else {
                 out += 5;
             }
-            }
 
             var score321 = document.getElementById("3.2a");
             var score322 = document.getElementById("3.2b");
             var score323 = document.getElementById("3.2c");
             var score324 = document.getElementById("3.2d");
 
-            {
             if (score324.checked === true || score321.checked === false && score322.checked === false && score323.checked === false) {
                 out += 0;
             }
@@ -152,7 +155,6 @@
             }
             else {
                 out += 5;
-            }
             }
 
             var score412=document.getElementById("412");
@@ -175,6 +177,7 @@
     }
 
 </script>
+
 <button type="button" onclick="test()">提交</button>
 </body>
 </html>
